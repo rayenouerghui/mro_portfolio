@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Global ─────────────────────────────────────────── */
+html { scroll-behavior: smooth; }
+body, html {
+  background: hsl(210,29%,8%);
+  color: hsl(210,17%,98%);
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+:focus-visible { outline: 2px solid hsl(216,97%,42%); outline-offset: 2px; }
+
+/* ── Scrollbar ───────────────────────────────────────── */
+::-webkit-scrollbar       { width: 6px; }
+::-webkit-scrollbar-track { background: hsl(210,29%,8%); }
+::-webkit-scrollbar-thumb { background: hsl(210,12%,28%); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: hsl(182,66%,54%); }
+
+/* ── Utilities ───────────────────────────────────────── */
+.gradient-text {
+  background: linear-gradient(135deg,
+    hsl(182,66%,54%) 0%,
+    hsl(216,97%,60%) 50%,
+    hsl(270,60%,70%) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glow-teal   { box-shadow: 0 0 20px hsla(182,66%,54%,0.35); }
+.glow-blue   { box-shadow: 0 0 20px hsla(216,97%,42%,0.4); }
+.glow-purple { box-shadow: 0 0 20px hsla(270,60%,60%,0.35); }
+
+.glass-nav {
+  background: hsla(210,29%,8%,0.85) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* ── Button glows ────────────────────────────────────── */
+.btn-glow-teal { position: relative; overflow: hidden; transition: all 0.3s ease; }
+.btn-glow-teal::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(circle at center, hsla(182,66%,54%,0.25) 0%, transparent 70%);
+  opacity: 0; transition: opacity 0.3s ease;
+}
+.btn-glow-teal:hover::before { opacity: 1; }
+.btn-glow-teal:hover { box-shadow: 0 0 24px hsla(182,66%,54%,0.4), 0 0 8px hsla(182,66%,54%,0.2); }
+
+.btn-glow-blue { position: relative; overflow: hidden; transition: all 0.3s ease; }
+.btn-glow-blue::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(circle at center, hsla(216,97%,60%,0.25) 0%, transparent 70%);
+  opacity: 0; transition: opacity 0.3s ease;
+}
+.btn-glow-blue:hover::before { opacity: 1; }
+.btn-glow-blue:hover { box-shadow: 0 0 24px hsla(216,97%,42%,0.5), 0 0 8px hsla(216,97%,42%,0.2); }
+
+/* ── Shimmer border ──────────────────────────────────── */
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+.shimmer-border {
+  background: linear-gradient(90deg,
+    hsl(210,12%,25%) 0%,
+    hsl(182,66%,54%) 50%,
+    hsl(210,12%,25%) 100%);
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+}
+
+/* ── Animations ──────────────────────────────────────── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+.float-anim { animation: float 4s ease-in-out infinite; }
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+.animate-blink { animation: blink 1s step-end infinite; }
+
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(5px); }
+}
+.animate-bounce-slow { animation: bounce-slow 1.8s ease-in-out infinite; }
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(1.4); }
+}
+.pulse-dot { animation: pulse-dot 1.5s ease-in-out infinite; }
