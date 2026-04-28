@@ -9,7 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const PHOTO_URL = "https://c.animaapp.com/mn4m7hcrbcqcdh/img/uploaded-asset-1774359536626-0.png";
+const PHOTO_URL = "/pic 2.png";
 
 const INFO_PILLS = [
   { icon: GraduationCap, label: "ESPRIT University",       accent: "hsl(216,97%,60%)" },
