@@ -27,9 +27,9 @@ const TECH_CHIPS = [
 ];
 
 const STATS = [
-  { value: "3+",  label: "Years Exp",  accent: "hsl(182,66%,54%)" },
-  { value: "15+", label: "Projects",   accent: "hsl(216,97%,60%)" },
-  { value: "5+",  label: "Certs",      accent: "hsl(270,60%,70%)" },
+  { value: "1+",  label: "Years Exp",  accent: "hsl(182,66%,54%)" },
+  { value: "5+", label: "Projects",   accent: "hsl(216,97%,60%)" },
+  { value: "3+",  label: "Certs",      accent: "hsl(270,60%,70%)" },
   { value: "∞",   label: "Coffee ☕",  accent: "hsl(36,100%,52%)" },
 ];
 
