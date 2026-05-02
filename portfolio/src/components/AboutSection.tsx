@@ -9,7 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const PHOTO_URL = "/pic 2.png";
+const PHOTO_URL = `${import.meta.env.BASE_URL}pic 2.png`;
 
 const INFO_PILLS = [
   { icon: GraduationCap, label: "ESPRIT University",       accent: "hsl(216,97%,60%)" },
@@ -176,7 +176,9 @@ export default function AboutSection() {
 
             {/* Download CV */}
             <a
-              href="#"
+              href="https://drive.google.com/file/d/1k6dg0a04os0ZSehoDUnumNClwU7L20aH/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
               className="btn-glow-teal inline-flex items-center gap-2 px-6 py-3 rounded-lg font-sans font-semibold text-sm w-fit"
               style={{ background: "linear-gradient(135deg, hsl(182,66%,38%) 0%, hsl(182,66%,50%) 100%)", color: "hsl(210,29%,8%)" }}
             >

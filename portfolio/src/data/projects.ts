@@ -7,7 +7,7 @@ export const PROJECTS: Project[] = [
     description:
       "A full-stack PHP MVC application covering gaming, deliveries, events, blog, and reclamations. Two UI domains: Frontoffice (users) and Backoffice (admin). Real-time delivery tracking with MapLibre GL and an AI module for reclamation analysis.",
     category: "AI",
-    thumbnailUrl: "/nextgen-preview.png",
+    thumbnailUrl: `${import.meta.env.BASE_URL}nextgen-preview.png`,
     liveDemoUrl:
       "https://nextgenweb.infinityfreeapp.com/view/frontoffice/index.php",
     repoUrl: "https://github.com/rayenouerghui/Projet_nextgen",
@@ -48,7 +48,7 @@ A comprehensive modern PHP application organized with an MVC-style architecture 
     description:
       "A desktop 2D platformer game written in C using SDL 1.2. Features animated sprites, multiple levels, collectibles, collision detection, minigames, score saving, and full audio controls.",
     category: "Open Source",
-    thumbnailUrl: "/game-sdl.png",
+    thumbnailUrl: `${import.meta.env.BASE_URL}game-sdl.png`,
     liveDemoUrl:
       "https://drive.google.com/file/d/1MIwTbxxGLvfyqpgrifOJV8s3TzfB3AhF/view?usp=sharing",
     repoUrl: "https://github.com/rayenouerghui/Wizards-of-War",
@@ -83,7 +83,7 @@ A desktop 2D platformer game built in C with SDL 1.2, using classic game archite
     description:
       "An embedded security system for electric scooters using a PIC microcontroller. Features helmet detection, speed monitoring, anti-theft alarm, and real-time safety controls. Fully simulated in Proteus.",
     category: "Automation",
-    thumbnailUrl: "/trotinette-security.png",
+    thumbnailUrl: `${import.meta.env.BASE_URL}trotinette-security.png`,
     liveDemoUrl: "https://rayenouerghui.github.io/securite-trotinnete/",
     repoUrl: "https://github.com/rayenouerghui/securite-trotinnete",
     detailedContent: `## Overview
