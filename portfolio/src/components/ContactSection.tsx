@@ -146,8 +146,8 @@ export default function ContactSection() {
         {/* Social links */}
         <div className="flex justify-center gap-4 mt-10">
           {[
-            { href: "https://linkedin.com", icon: LinkedinLogo, label: "LinkedIn" },
-            { href: "https://github.com",   icon: GithubLogo,   label: "GitHub" },
+            { href: "https://www.linkedin.com/in/mohamed-rayen-ouerghui-45354a339/", icon: LinkedinLogo, label: "LinkedIn" },
+            { href: "https://github.com/rayenouerghui",   icon: GithubLogo,   label: "GitHub" },
             { href: "mailto:medrayenouerghui@gmail.com", icon: EnvelopeSimple, label: "Email" },
           ].map(({ href, icon: Icon, label }) => (
             <a

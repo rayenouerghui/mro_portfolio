@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   Cloud, Cube, Terminal, Robot,
   GraduationCap, MapPin, Code, DownloadSimple,
@@ -9,7 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const PHOTO_URL = "/pic 2.png";
+const PHOTO_URL = "/mro_portfolio/pic 2.png";
 
 const INFO_PILLS = [
   { icon: GraduationCap, label: "ESPRIT University",       accent: "hsl(216,97%,60%)" },
@@ -176,12 +176,14 @@ export default function AboutSection() {
 
             {/* Download CV */}
             <a
-              href="#"
+              href="https://github.com/rayenouerghui"
+              target="_blank"
+              rel="noreferrer"
               className="btn-glow-teal inline-flex items-center gap-2 px-6 py-3 rounded-lg font-sans font-semibold text-sm w-fit"
               style={{ background: "linear-gradient(135deg, hsl(182,66%,38%) 0%, hsl(182,66%,50%) 100%)", color: "hsl(210,29%,8%)" }}
             >
               <DownloadSimple size={18} weight="bold" />
-              Download Resume (CV)
+              View GitHub Profile
             </a>
           </div>
         </div>
@@ -194,7 +196,7 @@ export default function AboutSection() {
 function HighlightCard({
   icon: Icon, title, desc, accent,
 }: { icon: React.ElementType; title: string; desc: string; accent: string }) {
-  const [hovered, setHovered] = React.useState(false);
+  const [hovered, setHovered] = useState(false);
   return (
     <div
       className="relative p-5 rounded-xl border overflow-hidden transition-all duration-300 cursor-default"
@@ -219,4 +221,3 @@ function HighlightCard({
   );
 }
 
-import React from "react";

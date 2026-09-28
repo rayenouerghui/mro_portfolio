@@ -2,9 +2,9 @@ import { useState } from "react";
 import { LinkedinLogo, GithubLogo, EnvelopeSimple } from "@phosphor-icons/react";
 
 const SOCIALS = [
-  { icon: LinkedinLogo, label: "LinkedIn", href: "https://linkedin.com", hoverColor: "hsl(216,97%,60%)", hoverBorder: "hsl(216,97%,60%)" },
-  { icon: GithubLogo,   label: "GitHub",   href: "https://github.com",   hoverColor: "hsl(182,66%,54%)", hoverBorder: "hsl(182,66%,54%)" },
-  { icon: EnvelopeSimple, label: "Email",  href: "mailto:contact@example.com", hoverColor: "hsl(270,60%,70%)", hoverBorder: "hsl(270,60%,70%)" },
+  { icon: LinkedinLogo, label: "LinkedIn", href: "https://www.linkedin.com/in/mohamed-rayen-ouerghui-45354a339/", hoverColor: "hsl(216,97%,60%)", hoverBorder: "hsl(216,97%,60%)" },
+  { icon: GithubLogo,   label: "GitHub",   href: "https://github.com/rayenouerghui",   hoverColor: "hsl(182,66%,54%)", hoverBorder: "hsl(182,66%,54%)" },
+  { icon: EnvelopeSimple, label: "Email",  href: "mailto:medrayenouerghui@gmail.com", hoverColor: "hsl(270,60%,70%)", hoverBorder: "hsl(270,60%,70%)" },
 ];
 
 function SocialBtn({ icon: Icon, label, href, hoverColor, hoverBorder }: typeof SOCIALS[0]) {

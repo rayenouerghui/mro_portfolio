@@ -6,7 +6,7 @@ import ProjectDetailPage from "./pages/ProjectDetailPage";
 function App() {
   return (
     <AnimaProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/mro_portfolio">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/projects/:id" element={<ProjectDetailPage />} />
