@@ -7,7 +7,7 @@ export const PROJECTS: Project[] = [
     description:
       "A full-stack PHP MVC application covering gaming, deliveries, events, blog, and reclamations. Two UI domains: Frontoffice (users) and Backoffice (admin). Real-time delivery tracking with MapLibre GL and an AI module for reclamation analysis.",
     category: "AI",
-    thumbnailUrl: "/mro_portfolio/nextgen-preview.png",
+    thumbnailUrl: "/nextgen-preview.png",
     liveDemoUrl:
       "https://nextgenweb.infinityfreeapp.com/view/frontoffice/index.php",
     repoUrl: "https://github.com/rayenouerghui/Projet_nextgen",
