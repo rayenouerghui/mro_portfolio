@@ -48,7 +48,7 @@ A comprehensive modern PHP application organized with an MVC-style architecture 
     description:
       "A desktop 2D platformer game written in C using SDL 1.2. Features animated sprites, multiple levels, collectibles, collision detection, minigames, score saving, and full audio controls.",
     category: "Open Source",
-    thumbnailUrl: "/mro_portfolio/game-sdl.png",
+    thumbnailUrl: "/game-sdl.png",
     liveDemoUrl:
       "https://drive.google.com/file/d/1MIwTbxxGLvfyqpgrifOJV8s3TzfB3AhF/view?usp=sharing",
     repoUrl: "https://github.com/rayenouerghui/Wizards-of-War",
