@@ -83,7 +83,7 @@ A desktop 2D platformer game built in C with SDL 1.2, using classic game archite
     description:
       "An embedded security system for electric scooters using a PIC microcontroller. Features helmet detection, speed monitoring, anti-theft alarm, and real-time safety controls. Fully simulated in Proteus.",
     category: "Automation",
-    thumbnailUrl: "/mro_portfolio/trotinette-security.png",
+    thumbnailUrl: "/trotinette-security.png",
     liveDemoUrl: "https://rayenouerghui.github.io/securite-trotinnete/",
     repoUrl: "https://github.com/rayenouerghui/securite-trotinnete",
     detailedContent: `## Overview

@@ -9,7 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const PHOTO_URL = "/mro_portfolio/pic 2.png";
+const PHOTO_URL = "/pic 2.png";
 
 const INFO_PILLS = [
   { icon: GraduationCap, label: "ESPRIT University",       accent: "hsl(216,97%,60%)" },
